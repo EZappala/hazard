@@ -1,6 +1,6 @@
 use bevy::prelude::*;
 
-use proto2::AppPlugin;
+use hazard::AppPlugin;
 
 fn main() -> AppExit {
     App::new().add_plugins(AppPlugin).run()

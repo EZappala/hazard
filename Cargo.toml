@@ -1,8 +1,12 @@
 [package]
-name = "proto2"
+name = "hazard"
+description = "Brackeys Gamejam 2025.2"
 authors = ["Éloïse Zappala <eloise.zappala@proton.me>"]
 version = "0.1.0"
 edition = "2024"
+repository = "https://github.com/ezappala/hazard"
+license = "MIT"
+license-file = "LICENCE.md"
 
 [dependencies]
 bevy = { version = "0.16", features = ["wayland"] }

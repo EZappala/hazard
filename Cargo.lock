@@ -2896,6 +2896,22 @@ dependencies = [
 ]
 
 [[package]]
+name = "hazard"
+version = "0.1.0"
+dependencies = [
+ "anyhow",
+ "avian3d",
+ "bevy",
+ "bevy_egui",
+ "bevy_simple_subsecond_system",
+ "getrandom 0.3.3",
+ "log",
+ "rand 0.8.5",
+ "thiserror 1.0.69",
+ "tracing",
+]
+
+[[package]]
 name = "heapless"
 version = "0.8.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -4411,22 +4427,6 @@ name = "profiling"
 version = "1.0.16"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "afbdc74edc00b6f6a218ca6a5364d6226a259d4b8ea1af4a0ea063f27e179f4d"
-
-[[package]]
-name = "proto2"
-version = "0.1.0"
-dependencies = [
- "anyhow",
- "avian3d",
- "bevy",
- "bevy_egui",
- "bevy_simple_subsecond_system",
- "getrandom 0.3.3",
- "log",
- "rand 0.8.5",
- "thiserror 2.0.12",
- "tracing",
-]
 
 [[package]]
 name = "quick-xml"
