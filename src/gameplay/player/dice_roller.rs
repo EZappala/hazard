@@ -1,6 +1,6 @@
 //! # Dice Roller
 //! Adapted from Erik Horton's implementation.
-//! https://blog.erikhorton.com/2024/08/25/building-a-bevy-plugin-for-rolling-dice.html
+//! <https://blog.erikhorton.com/2024/08/25/building-a-bevy-plugin-for-rolling-dice.html>
 
 use avian3d::prelude::*;
 use bevy::{input::common_conditions::input_just_pressed, prelude::*};

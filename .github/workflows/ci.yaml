@@ -15,7 +15,7 @@ env:
   RUSTFLAGS: -Dwarnings -Zshare-generics=y -Zthreads=0
   RUSTDOCFLAGS: -Dwarnings -Zshare-generics=y -Zthreads=0
   # Use the same Rust toolchain across jobs so they can share a cache.
-  toolchain: nightly-2025-06-26
+  toolchain: nightly-2025-08-23
 
 jobs:
   # Check formatting.
@@ -31,7 +31,7 @@ jobs:
         uses: dtolnay/rust-toolchain@master
         with:
           toolchain: ${{ env.toolchain }}
-          components: rustfmt
+          components: rustfmt cargo-fmt
 
       - name: Check formatting
         run: cargo fmt --all -- --check
@@ -77,7 +77,7 @@ jobs:
         uses: dtolnay/rust-toolchain@master
         with:
           toolchain: ${{ env.toolchain }}
-          components: clippy
+          components: clippy cargo-clippy
 
       - name: Restore Rust cache
         id: cache
